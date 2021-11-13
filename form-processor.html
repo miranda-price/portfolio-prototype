@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Miranda Price | Contact</title>
+		<title>Miranda Price | Home</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		 <link rel="stylesheet" href="//bootstrap-extension.com/bootstrap-extension-5.0.0/css/bootstrap-extension.min.css" type="text/css">
 		<script src="//bootstrap-extension.com/bootstrap-extension-5.0.0/js/bootstrap-extension.min.js"></script> 
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="web.html">Web</a>
@@ -39,7 +39,7 @@
           <a class="nav-link" href="resume.html">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
 
@@ -58,52 +58,29 @@
   </div>
 </nav>
 	</header>
-	<h1>Contact</h1>
-	<div class="row">
-	<div class="col-md-4">
-		<p>Connect with me on LinkedIn and become a part of my network or follow me on GitHub to see my latest work.  To speak with me about summer internship opportunities, part-time job openings, or just say hello, fill out the form to the right to email me.</p>	
-		<div class="row">
-			<a class="col-md-4" href = "https://www.linkedin.com/in/miranda27price/"><img class="col-md-2" src="content/bxl-linkedin-square.png" alt="black and white LinkedIn icon"/> </a>
-			<a class="col-md-4" href = "https://github.com/miranda-price"><img class="col-md-2" src="content/bxl-github.png" alt="black and white GitHub icon"/> </a>
-		</div>
-	</div>
-	
-	<form class="col-md-8" method="post" action="form-processor.html" class="full-width">
+		<h1>About Me</h1>
+		<p>I am an aspiring UX/UI designer with experience in front-end web design and development.  I have a broad educational background that includes many types of digital design and the industry-standard iterative design process for designing digital applications.  I value learning opportunities and challenges and pride myself on my ability to quickly learn new technologies and adapt in the face of challenging situations.</p>
+<script>
+$emailTo = "mprice21@u.rochester.edu";
+$name = Trim(stripslashes($_POST['name'])); 
+$last = Trim(stripslashes($_POST['last'])); 
+$email = Trim(stripslashes($_POST['email'])); 
+$subject = $_POST['subject'];
+$message = Trim(stripslashes($_POST['message']));
 
-		<legend>Email me:</legend>
-		<br>
+$body = "";
 
-		<div class="row">
-			<label class="col-md-2 form-label" id ="floatingInput" for="name">First Name:</label>
-			<input class="col-md-4 form-content" type="text" name="name" id="name">
-				
-			<label class="col-md-2 form-label" id ="floatingInput" for="last">Last Name:</label>
-			<input class="col-md-4 form-content" type="text" name="last" id="last">
-		</div> 
+$body .= $message;
+$body .= "\n\n";
 
-		<div class="row">
-			<label class="col-md-2 form-label" id ="floatingInput" for="email">Email:</label>
-			<input class="col-md-4 form-content" type="text" name="email" id="email">
-				
-			<label class="col-md-2 form-label" id ="floatingInput" for="subject">Subject:</label>
-			<select class="col-md-4 form-select-sm" name="subject" id="subject">
-				<option value="blank"></option>
-				<option value="intern">Internship</option>
-				<option value="job">Part-Time Job</option>
-				<option value="chat">Say Hello!</option>
-			</select>
-		</div> 
-			
-		<label class="row form-label" id ="floatingInput" for="message">Custom Message:</label>
-		<textarea class="row col-md-12" name="message" id="message"></textarea>
-		
-		<div class="row">
-			<div class="col-md-4"></div>
-			<input class="col-md-4 btn btn-dark" type="submit" value="Send!">
-			<div class="col-md-4"></div>
-		</div>
-	</form> 
-	</div>
+$body .= "From,"
+$body .= "\n\n";
+
+$body .= $name;
+$body .= $last;
+
+mail($emailTo, $subject, $body, "From: <$email>");
+</script>
 	
 </body>
 </div>
