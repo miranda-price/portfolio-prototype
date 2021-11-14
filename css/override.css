@@ -1,0 +1,52 @@
+/* *****************
+Base styles
+***************** */
+img {padding: 10px;}
+
+h1 {font-size: 60px;}
+
+h1, h2, h3, h4 {color: #671a6f;}
+
+p {
+	padding: 7px;
+	line-height: 1.7em;
+}
+
+ul {
+	list-style: none;
+	padding-left: 5px;
+}
+
+li {
+	margin-top: 5px;
+}
+
+/* *****************
+Layout styles
+***************** */
+
+.col-md-4 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+/* *****************
+Module styles
+***************** */
+
+.tile img {
+	padding: 0;
+}
+
+.resume, .work {
+	background-color: #bbbbbb;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 10px;
+}
+
+/* *****************
+State styles
+***************** */
+
