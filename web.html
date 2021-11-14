@@ -7,10 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Miranda Price | Web Design</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		 <link rel="stylesheet" href="//bootstrap-extension.com/bootstrap-extension-5.0.0/css/bootstrap-extension.min.css" type="text/css">
-		<script src="//bootstrap-extension.com/bootstrap-extension-5.0.0/js/bootstrap-extension.min.js"></script> 
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/override.css">
 
 	</head>
 	
@@ -18,7 +17,7 @@
 
 	<body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #671a6f;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Miranda Price</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,54 +26,57 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="web.html">Web</a>
+          <a class="nav-link" href="web.php">Web</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="uxui.html">UX/UI</a>
+          <a class="nav-link" href="uxui.php">UX/UI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="resume.html">Resume</a>
+          <a class="nav-link" href="resume.php">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">  
         <li class="nav-item">
-          <a href = "contact.php"><img src="content/bxs-envelope.png" alt="black and white envelope email icon"/></a>
+          <a href = "contact.php"><img src="content/bxs-envelope-white.png" alt="black and white envelope email icon"/></a>
         </li>
         <li class="nav-item">
-          <a href = "https://www.linkedin.com/in/miranda27price/"><img src="content/bxl-linkedin-square.png" alt="black and white LinkedIn icon"/> </a>
+          <a href = "https://www.linkedin.com/in/miranda27price/"><img src="content/bxl-linkedin-square-white.png" alt="black and white LinkedIn icon"/> </a>
         </li>
         <li class="nav-item">
-          <a href = "https://github.com/miranda-price"><img src="content/bxl-github.png" alt="black and white GitHub icon"/> </a>
+          <a href = "https://github.com/miranda-price"><img src="content/bxl-github-white.png" alt="black and white GitHub icon"/> </a>
         </li>
       </ul>
     </div>
   </div>
-</nav>
-	</header>
-	<h1>Web Design</h1>
-	<h2>See the Cities <small class="text-muted">Website styling and visual design</small></h2>	
-	<h3>Summer 2021</h3>
+</nav>	</header>
+	<h1 class="page-top">Web Design</h1>
+	<div class="row">
+		<h2 class="col-md-9">See the Cities <small class="text-muted">Website Styling and Visual Design</small></h2>	
+		<h3 class="col-md-3 justify-content-end">Summer 2021</h3>
+	</div>
 
 	<div class = "row">
 		<div class="col-md-4">
-			<h3>Final Product</h3>
-			<p>This website was collaboratively made with two of my peers.  For this website, I was the visual designer responsible for all the styling.  Once I knew the content I would be working with, I sketched out the layout of each page and made notes on what colors, fonts, and other visual elements should be used (sketches not pictured).  Afterwards, I used a CSS Framework, as well as an override stylesheet, to carry out my vision.</p>
-			<p>The top of the homepage is pictured to the right.  The picture links to the full website.</p>
+			<h3 class="work">Final Product</h3>
+			<p>This website was collaboratively made with two of my peers.  For this website, I was the visual designer responsible for all the styling.  Once I knew the content I would be working with, I sketched out the layout of each page and made notes on what colors, fonts, and other visual elements should be used (sketches not pictured).</p>
+			<em><p>The top of the homepage pictured right, links to full site</p></em>
 		</div>
 		<a class="col-md-8" href="http://csc174.org/lab07/mleone10/index.php"><img class="img-fluid" src = "content/web_style.jpg" width="100%" alt = "accompanying photo"></a>
 	</div>
 	
-	<h2>Women That Have Made a Difference <small class="text-muted">Content integration and best practices</small></h2>	
-	<h3>Spring 2020</h3>
+	<div class="row">
+		<h2 class="col-md-9">Impactful Women <small class="text-muted">Content Integration and Best Practice</small></h2>	
+		<h3 class="col-md-3 justify-content-end">Spring 2020</h3>
+	</div>
 
-	<nav class="nav">
+	<!--<nav class="nav">
 		<div class="container-fluid">
 	      <ul class="nav justify-content-center">
 	        <li class="nav-item">
@@ -88,22 +90,22 @@
 	        </li>
 	      </ul>
 	  </div>
-	</nav>
+	</nav>-->
 
 	<div class = "row">
 		<div class="col-md-4">
-			<h3 id="final">Final Product</h3>
-			<p>This final project took four separate biographical webpages about impactful women and combined them into one cohesive project.  The project had three main goals: content integration, webpage responsiveness, and search engine optimization.  For content integration, the challenge was to adapt the content from four webpages from four different creators so that the information architecture and styling of each page remained consistent.  Some pages had their content reordered to fit the outline of the other pages or to fit the layout structure of the other pages.  HTML had to be edited so that the styling from one of the original sites would work on all the pages of the new site.  Webpage responsiveness and search engine optimization are detailed below.</p>
-			<p>The top of the homepage is pictured to the right.</p>
+			<h3 class="work" id="final">Final Product</h3>
+			<p>This final project took four separate biographical webpages about impactful women and combined them into one cohesive project.  The project had three main goals: content integration, webpage responsiveness, and search engine optimization.  For content integration, the challenge was to adapt the content from four webpages from four different creators so that the information architecture and styling of each page remained consistent.  Some pages had their content reordered to fit the outline of the other pages or to fit the layout structure of the other pages.  HTML had to be edited so that the styling from one of the original sites would work on all the pages of the new site.</p>
+			<em><p>The top of the homepage pictured right</p></em>
 		</div>
 		<img class="col-md-8 img-fluid" src = "content/women_final.jpg" alt = "accompanying photo">
 	</div>
 
 	<div class = "row">
 		<div class="col-md-4">
-			<h3 id="responsive">Responsive Webpages</h3>
+			<h3 class="work" id="responsive">Responsive Webpages</h3>
 			<p>This project emphasized creating webpages that were responsive and that worked well in mobile browsers.  Breakpoints were used to ensure that images, tables, and side-by-side content translated well to a smaller device without creating a horizontal scroll bar.  Readability and usability were still emphasized for this project, even when working with smaller screens.</p>
-			<p>The two photos to the right demonstrate the same part of the website displayed on a laptop and on a smart phone.</p>
+			<em><p>The same part of the website displayed on a laptop and on a smart phone pictured right</p></em>
 		</div>
 		<img class="col-md-6 img-fluid" src = "content/mobile_wide.jpg" alt = "accompanying photo">
 		<img class="col-md-2 img-fluid" src = "content/mobile_narrow.jpg" alt = "accompanying photo">
@@ -111,14 +113,17 @@
 
 	<div class = "row">
 		<div class="col-md-4">
-			<h3 id="seo">Search Engine Optimization</h3>
+			<h3 class="work" id="seo">Search Engine Optimization</h3>
 			<p>This project also emphasized optimizing the site for search engines to give the site more visibility on the Internet.  For this HTML, search engine optimization meant including title tags in the head element, using HTML elements correctly, outlining and ordering HTML elements correclty, and writing descriptive alts for all images and hyperlinks.  I also setup and incorporated a sitemap file and a Google Analytics for this site to track the site's user traffic.</p>
-			<p>Pictured right is the Google Analytics report for the website.</p>
+			<em><p>Google Analytics report for the website pictured right</p></em>
 		</div>
 		<img class="col-md-8 img-fluid" src = "content/seo.jpg" alt = "accompanying photo">
 	</div>
 	
-</body>
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/menu-highlighter.js"></script>	</body>
 </div>
 
 </html>
